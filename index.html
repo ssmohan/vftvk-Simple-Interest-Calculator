@@ -9,7 +9,7 @@
         <div class = "maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  
+        Amount <input type="number"  id="principal" onchange="numchk()"SS>
         <br/>
         Interest Rate <input type="range"  id="rate" min="1" max="20" value="10.25" step="0.025" onchange="updateRate()">  
         <span id="rate_val"> 10.25%</span>
@@ -28,7 +28,11 @@
         </select>
         <br/>
         <button onclick="compute()">Compute Interest</button>
-        <span id="result"></span>
+        <br/>
+        <br/>
+        <span id="result"> </span> 
+        <br/>
+        <br/>
         <footer>
             &#169; This Calculator belongs to Subha Mohan.
         </footer>
